@@ -45,7 +45,7 @@ class IndexPage extends React.Component {
             form_name="Newsletter Form"
             form_id="4722ec38-9d3e-46ca-9068-04c184f114cd"
             form_classname="form-newsletter"
-            scriptSrc="https://formsv2.webriq.com"
+            scriptSrc="https://formsv2.webriq.com/js/initReactForms"
           >
           <div className="form-row">
           <div className="col-12 mb-3">
