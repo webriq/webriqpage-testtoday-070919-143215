@@ -68,6 +68,18 @@ class IndexPage extends React.Component {
             <div className="form-group">
               <input
                 className="form-control"
+                type="file"
+                name="attachment"
+                id="attachment"
+              />
+              <label htmlFor="attachment">
+                Choose a file attachment
+              </label>
+          </div>
+          <div className="col-12 mb-3">
+            <div className="form-group">
+              <input
+                className="form-control"
                 type="text"
                 name="Name"
                 id="full_name"
