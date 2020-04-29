@@ -35,13 +35,14 @@ class WebriqForm extends React.Component {
     
 
   render() {
-    const { children, form_id, form_name, form_classname } = this.props;
+    const { children, form_id, form_name, form_classname, scriptSrc } = this.props;
     return (
       <WebriQForm
           method="POST"
           data-form-id={form_id} // replace with your formID
           name={form_name}
           className={form_classname}
+          scriptSrc={scriptSrc || "https://forms.webriq.com"}
         >
         { children }
       </WebriQForm>
