@@ -7,10 +7,7 @@ import SampleForm from '../components/Form'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
 import 'react-lazy-load-image-component/src/effects/blur.css'
 
-
 class IndexPage extends React.Component {
- 
-    
   render() {
     const siteTitle = this.props.data.site.siteMetadata.title
     const siteDescription = this.props.data.site.siteMetadata.description
@@ -25,18 +22,38 @@ class IndexPage extends React.Component {
           <br />
           <h1>Sample Swiper</h1>
           <br />
-          <MySwiper slidesperview={3}>
-            <div><LazyLoadImage effect="blur" className="img-fluid" src="https://source.unsplash.com/collection/145698/400x400" alt=""/></div>
-            <div><LazyLoadImage effect="blur" className="img-fluid" src="https://source.unsplash.com/collection/2203755/400x400" alt=""/></div>
-            <div><LazyLoadImage effect="blur" className="img-fluid" src="https://source.unsplash.com/collection/362271/400x400" alt=""/></div>
-            <div><LazyLoadImage effect="blur" className="img-fluid" src="https://source.unsplash.com/collection/3657445/400x400" alt=""/></div>
-            <div><LazyLoadImage effect="blur" className="img-fluid" src="https://source.unsplash.com/collection/385548/400x400" alt=""/></div>
-            <div><LazyLoadImage effect="blur" className="img-fluid" src="https://source.unsplash.com/collection/325867/400x400" alt=""/></div>
-            <div><LazyLoadImage effect="blur" className="img-fluid" src="https://source.unsplash.com/collection/1118905/400x400" alt=""/></div>
-            <div><LazyLoadImage effect="blur" className="img-fluid" src="https://source.unsplash.com/collection/2270935/400x400" alt=""/></div>
-            <div><LazyLoadImage effect="blur" className="img-fluid" src="https://source.unsplash.com/collection/1252081/400x400" alt=""/></div>
-            <div><LazyLoadImage effect="blur" className="img-fluid" src="https://source.unsplash.com/collection/2411320/400x400" alt=""/></div>
-          </MySwiper>
+          <SampleForm
+            form_name="Newsletter Form"
+            form_id="fbeff55b-16bb-4ce8-98dc-b497b3ad7fbf"
+            form_classname="form-newsletter"
+            scriptSrc="https://formsv2.webriq.com/js/initReactForms"
+          >
+            <div className="form-row">
+              <div className="col-12 mb-3">
+                <div className="form-group">
+                  <input
+                    className="form-control"
+                    type="email"
+                    name="Email Address"
+                    id="email_address"
+                  />
+                  <label htmlFor="email_address">
+                    Enter Your Email Address
+                  </label>
+                </div>
+                <small className="text-dark form-text mt-2">
+                  We will never share your email with anyone else.
+                </small>
+              </div>
+              <div className="col-12">
+                <div className="form-group">
+                  <button className="btn btn-primary hvr-shadow" type="submit">
+                    Submit
+                  </button>
+                </div>
+              </div>
+            </div>
+          </SampleForm>
           <br />
           <br />
           <h1>Sample Form</h1>
@@ -47,68 +64,58 @@ class IndexPage extends React.Component {
             form_classname="form-newsletter"
             scriptSrc="https://formsv2.webriq.com/js/initReactForms"
           >
-          <div className="form-row">
-          <div className="col-12 mb-3">
-            <div className="form-group">
-              <input
-                className="form-control"
-                type="email"
-                name="Email Address"
-                id="email_address"
-              />
-              <label htmlFor="email_address">
-                Enter Your Email Address
-              </label>
-            </div>
-            <small className="text-dark form-text mt-2">
-                We will never share your email with anyone else.
-              </small>
-          </div>
-          <div className="col-12 mb-3">
-            <div className="form-group">
-              <input
-                className="form-control"
-                type="file"
-                name="attachment"
-                id="attachment"
-              />
-              <label htmlFor="attachment">
-                Choose a file attachment
-              </label>
-            </div>
-          </div>
-          <div className="col-12 mb-3">
-            <div className="form-group">
-              <input
-                className="form-control"
-                type="text"
-                name="Name"
-                id="full_name"
-              />
-              <label htmlFor="full_name">
-                Enter Your Name
-              </label>
-            </div>
-          </div>
-          <div className="col-12">
-            
-              <div className="webriq-recaptcha" />
-            
-          </div>
+            <div className="form-row">
+              <div className="col-12 mb-3">
+                <div className="form-group">
+                  <input
+                    className="form-control"
+                    type="email"
+                    name="Email Address"
+                    id="email_address"
+                  />
+                  <label htmlFor="email_address">
+                    Enter Your Email Address
+                  </label>
+                </div>
+                <small className="text-dark form-text mt-2">
+                  We will never share your email with anyone else.
+                </small>
+              </div>
+              <div className="col-12 mb-3">
+                <div className="form-group">
+                  <input
+                    className="form-control"
+                    type="file"
+                    name="attachment"
+                    id="attachment"
+                  />
+                  <label htmlFor="attachment">Choose a file attachment</label>
+                </div>
+              </div>
+              <div className="col-12 mb-3">
+                <div className="form-group">
+                  <input
+                    className="form-control"
+                    type="text"
+                    name="Name"
+                    id="full_name"
+                  />
+                  <label htmlFor="full_name">Enter Your Name</label>
+                </div>
+              </div>
+              <div className="col-12">
+                <div className="webriq-recaptcha" />
+              </div>
 
-          <div className="col-12">
-            <div className="form-group">
-              <button
-                className="btn btn-primary hvr-shadow"
-                type="submit"
-              >
-                Submit
-              </button>
+              <div className="col-12">
+                <div className="form-group">
+                  <button className="btn btn-primary hvr-shadow" type="submit">
+                    Submit
+                  </button>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
           </SampleForm>
-          
         </div>
       </Layout>
     )
