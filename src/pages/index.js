@@ -24,11 +24,21 @@ class IndexPage extends React.Component {
           <br />
           <SampleForm
             form_name="Newsletter Form"
-            form_id="fbeff55b-16bb-4ce8-98dc-b497b3ad7fbf"
+            form_id="70d058a4-6abc-43a4-b43f-0c12b07d08fd"
             form_classname="form-newsletter"
+            scriptSrc="http://localhost:3000/js/initReactForms"
           >
             <div className="form-row">
               <div className="col-12 mb-3">
+                <div className="form-group">
+                  <input
+                    className="form-control"
+                    type="text"
+                    name="Name"
+                    id="name"
+                  />
+                  <label htmlFor="name">Name</label>
+                </div>
                 <div className="form-group">
                   <input
                     className="form-control"
@@ -44,6 +54,7 @@ class IndexPage extends React.Component {
                   We will never share your email with anyone else.
                 </small>
               </div>
+
               <div className="col-12">
                 <div className="form-group">
                   <button className="btn btn-primary hvr-shadow" type="submit">
@@ -57,63 +68,6 @@ class IndexPage extends React.Component {
           <br />
           <h1>Sample Form</h1>
           <br />
-          <SampleForm
-            form_name="Newsletter Form"
-            form_id="4722ec38-9d3e-46ca-9068-04c184f114cd"
-            form_classname="form-newsletter"
-          >
-            <div className="form-row">
-              <div className="col-12 mb-3">
-                <div className="form-group">
-                  <input
-                    className="form-control"
-                    type="email"
-                    name="Email Address"
-                    id="email_address"
-                  />
-                  <label htmlFor="email_address">
-                    Enter Your Email Address
-                  </label>
-                </div>
-                <small className="text-dark form-text mt-2">
-                  We will never share your email with anyone else.
-                </small>
-              </div>
-              <div className="col-12 mb-3">
-                <div className="form-group">
-                  <input
-                    className="form-control"
-                    type="file"
-                    name="attachment"
-                    id="attachment"
-                  />
-                  <label htmlFor="attachment">Choose a file attachment</label>
-                </div>
-              </div>
-              <div className="col-12 mb-3">
-                <div className="form-group">
-                  <input
-                    className="form-control"
-                    type="text"
-                    name="Name"
-                    id="full_name"
-                  />
-                  <label htmlFor="full_name">Enter Your Name</label>
-                </div>
-              </div>
-              <div className="col-12">
-                <div className="webriq-recaptcha" />
-              </div>
-
-              <div className="col-12">
-                <div className="form-group">
-                  <button className="btn btn-primary hvr-shadow" type="submit">
-                    Submit
-                  </button>
-                </div>
-              </div>
-            </div>
-          </SampleForm>
         </div>
       </Layout>
     )
