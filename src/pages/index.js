@@ -63,7 +63,7 @@ class IndexPage extends React.Component {
           </SampleForm>
           <br />
           <br />
-          <h1>Sample Form</h1>
+          <h1>Sample Form.</h1>
           <br />
         </div>
       </Layout>
