@@ -19,7 +19,6 @@ class IndexPage extends React.Component {
           <p>This is the homepage</p>
           <Link to="/blog">Go to Blog</Link>
           <br />
-          <br />
           <SampleForm
             form_name="Newsletter Form"
             form_id="70d058a4-6abc-43a4-b43f-0c12b07d08fd"
